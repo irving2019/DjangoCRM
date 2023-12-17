@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'djangocrm',
         'USER': 'postgres',
         'PASSWORD': 'admin',
         'HOST': 'localhost',
