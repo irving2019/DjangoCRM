@@ -6,7 +6,6 @@ from datetime import datetime
 
 class Device(models.Model):
 
-
     class Meta:
         db_table = 'devices'
         verbose_name = "Доступное оборудование"
@@ -20,7 +19,6 @@ class Device(models.Model):
 
 
 class Customer(models.Model):
-
 
     class Meta:
         db_table = 'customers'
@@ -36,7 +34,6 @@ class Customer(models.Model):
 
 
 class DeviceInField(models.Model):
-
 
     class Meta:
         db_table = 'devices_in_fields'
@@ -60,9 +57,7 @@ def status_validator(order_status):
             params={'order_status': order_status},
         )
 
-
 class Order(models.Model):
-
 
     class Meta:
         db_table = 'orders'
