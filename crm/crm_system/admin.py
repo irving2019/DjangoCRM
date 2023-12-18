@@ -2,8 +2,9 @@ from django.contrib import admin
 from .models import Order, Device, Customer, DeviceInField
 
 class DeviceAdmin(admin.ModelAdmin):
-    list_display = ('id', 'manufacturer', 'model')
     search_fields = ('manufacturer', 'model')
+    list_display = ('id', 'manufacturer', 'model')
+
 
 class OrderAdmin(admin.ModelAdmin):
     def my_customer(self,obj):
@@ -29,11 +30,12 @@ class OrderAdmin(admin.ModelAdmin):
     search_fields = ('device__customer__customer_name', 'device__id', 'device__serial_number',
                      'device__analyzer__model', 'device__analyzer__manufacturer')
 
-    raw_id_fields = ('device',)
+    raw_id_fields = ('device', )
 
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('id', 'customer_name', 'customer_address', 'customer_city')
     search_fields = ('customer_name', 'customer_address')
+    list_display = ('id', 'customer_name', 'customer_address', 'customer_city')
+
 
 class DeviceInFieldAdmin(admin.ModelAdmin):
     def my_customer(self, obj):

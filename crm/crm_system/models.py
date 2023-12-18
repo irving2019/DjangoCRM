@@ -1,7 +1,6 @@
 from django.db import models
 from datetime import datetime
 
-
 class Device(models.Model):
 
     class Meta:
@@ -20,7 +19,7 @@ class Customer(models.Model):
 
     class Meta:
         db_table = 'customers'
-        verbose_name = "Описание Контрагента"
+        verbose_name = "Контрагента"
         verbose_name_plural = "Описание Контрагентов"
 
     customer_name = models.TextField(verbose_name="Наименование Организации")
@@ -35,7 +34,7 @@ class DeviceInField(models.Model):
 
     class Meta:
         db_table = 'devices_in_fields'
-        verbose_name = "Оборудование в полях"
+        verbose_name = "Оборудование"
         verbose_name_plural = "Оборудования в полях"
 
     serial_number = models.TextField(verbose_name="Серийный номер")
@@ -52,9 +51,8 @@ class Order(models.Model):
 
     class Meta:
         db_table = 'orders'
-        verbose_name = "Заявка"
+        verbose_name = "Заявку"
         verbose_name_plural = "Заявки"
-
 
     statuses = (('open', 'открыта'),
                 ('closed', 'закрыта'),
