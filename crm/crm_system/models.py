@@ -5,7 +5,7 @@ class Device(models.Model):
 
     class Meta:
         db_table = 'devices'
-        verbose_name = "Доступное оборудование"
+        verbose_name = "Номенклатура"
         verbose_name_plural = "Доступные оборудования"
 
     manufacturer = models.TextField(verbose_name="Производитель")
@@ -19,7 +19,7 @@ class Customer(models.Model):
 
     class Meta:
         db_table = 'customers'
-        verbose_name = "Контрагента"
+        verbose_name = "Описание Контрагента"
         verbose_name_plural = "Описание Контрагентов"
 
     customer_name = models.TextField(verbose_name="Наименование Организации")
