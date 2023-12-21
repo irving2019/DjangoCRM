@@ -1,4 +1,4 @@
-{% extends "orders_app/base.html" %}
+{% extends "crm_system/base.html" %}
 {% load static %}
 {% block content %}
 
@@ -7,7 +7,7 @@
 
    <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around" style="padding: 50px 50px 50px 50px">
 
-
+       {% for el in data %}
        <div class="card" style="object-fit: none">
       <img src="{% static '1.png' %}">
   <div class="card-body">
