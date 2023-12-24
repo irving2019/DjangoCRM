@@ -13,19 +13,19 @@ def mainpage(request):
                 "overview": "Работа с заявками на оборудование"
             },
             {
+                "button_link": "devices",
+                "name": "Оборудование",
+                "overview": "Поиск Оборудования"
+            },
+            {
                 "button_link": "devpage",
                 "name": "Персонал",
-                "overview": "Работа с базами персонала"
+                "overview": "Работа с базой персонала"
             },
             {
                 "button_link": "devpage",
                 "name": "Финансы",
-                "overview": "Работа с базами финансов"
-            },
-            {
-                "button_link": "devpage",
-                "name": "База знаний",
-                "overview": "Работа с базами знаний"
+                "overview": "Работа с финансами"
             },
         ]
     }
@@ -54,4 +54,4 @@ def get_devices(request):
 
 
 def devpage(request):
-    return render(request, "crm_system/devpage.html", {"title": "Oops!"})
+    return render(request, "crm_system/devpage.html", {"title": "Ошибка!"})
