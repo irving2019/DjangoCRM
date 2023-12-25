@@ -10,7 +10,7 @@ def mainpage(request):
             {
                 "button_link": "admin",
                 "name": "Заявки",
-                "overview": "Работа с заявками на оборудование"
+                "overview": "Работа с заявками"
             },
             {
                 "button_link": "devices",
@@ -54,4 +54,4 @@ def get_devices(request):
 
 
 def devpage(request):
-    return render(request, "crm_system/devpage.html", {"title": "Ошибка!"})
+    return render(request, "crm_system/devpage.html", {"title": "Предупреждение!"})

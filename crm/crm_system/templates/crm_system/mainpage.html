@@ -5,11 +5,11 @@
   <body>
 
 
-   <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around" style="padding: 50px 50px 50px 50px">
+   <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around" style="padding: 200px 230px 10px 140px">
 
        {% for el in data %}
        <div class="card" style="object-fit: none">
-  <div class="card-body">
+  <div class="card-body" style="padding: 10px 60px 10px 20px">
     <h5 class="card-title">{{ el.name }}</h5>
     <p class="card-text">{{ el.overview }}</p>
     <a href={{ el.button_link }} class="btn btn-primary">Открыть</a>
