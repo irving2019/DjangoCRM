@@ -4,3 +4,4 @@
 2) Django Framework v 5.0
 3) PostgreSql v 7.8
 4) DBeaver v 23.3.0
+5) HTML && CSS
